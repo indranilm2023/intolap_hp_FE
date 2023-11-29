@@ -1,0 +1,1 @@
+export { default as IntegrationView } from './integration-view';

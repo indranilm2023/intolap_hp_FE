@@ -1,17 +1,17 @@
 import { Helmet } from 'react-helmet-async';
 
-import { BlogView } from 'src/sections/blog/view';
+import { IntegrationView } from 'src/sections/Integration/views';
 
 // ----------------------------------------------------------------------
 
-export default function BlogPage() {
+export default function IntegrationPage() {
   return (
     <>
       <Helmet>
-        <title> Blog | Minimal UI </title>
+        <title> Integration | Minimal UI </title>
       </Helmet>
 
-      <BlogView />
+      <IntegrationView />
     </>
   );
 }

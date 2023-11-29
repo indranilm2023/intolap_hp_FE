@@ -1,3 +1,68 @@
+// import { useState } from 'react';
+
+// import Stack from '@mui/material/Stack';
+// import Container from '@mui/material/Container';
+// import Grid from '@mui/material/Unstable_Grid2';
+// import Typography from '@mui/material/Typography';
+
+// import { products } from 'src/_mock/products';
+
+// import ProductCard from '../product-card';
+// import ProductSort from '../product-sort';
+// import ProductFilters from '../product-filters';
+// import ProductCartWidget from '../product-cart-widget';
+
+// // ----------------------------------------------------------------------
+
+// export default function Projects() {
+//   const [openFilter, setOpenFilter] = useState(false);
+
+//   const handleOpenFilter = () => {
+//     setOpenFilter(true);
+//   };
+
+//   const handleCloseFilter = () => {
+//     setOpenFilter(false);
+//   };
+
+//   return (
+//     <Container>
+//       <Typography variant="h4" sx={{ mb: 5 }}>
+//         Projects
+//       </Typography>
+
+//       <Stack
+//         direction="row"
+//         alignItems="center"
+//         flexWrap="wrap-reverse"
+//         justifyContent="flex-end"
+//         sx={{ mb: 5 }}
+//       >
+//         <Stack direction="row" spacing={1} flexShrink={0} sx={{ my: 1 }}>
+//           <ProductFilters
+//             openFilter={openFilter}
+//             onOpenFilter={handleOpenFilter}
+//             onCloseFilter={handleCloseFilter}
+//           />
+
+//           <ProductSort />
+//         </Stack>
+//       </Stack>
+
+//       <Grid container spacing={3}>
+//         {products.map((product) => (
+//           <Grid key={product.id} xs={12} sm={6} md={3}>
+//             <ProductCard product={product} />
+//           </Grid>
+//         ))}
+//       </Grid>
+
+//       <ProductCartWidget />
+//     </Container>
+//   );
+// }
+
+
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import { DataGrid } from '@mui/x-data-grid';
@@ -51,7 +116,7 @@ export default function Projects() {
 
   return (
     <>
-      <h1> User Details </h1>
+      <h1> Project Details </h1>
       <Box sx={{ height: 400, width: '100%' }}>
         <DataGrid
           rows={rows}
