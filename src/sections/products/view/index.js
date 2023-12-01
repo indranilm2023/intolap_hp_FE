@@ -1,1 +1,1 @@
-export { default as ProjectView } from './projects';
+export { default as Submissions } from './submissions';

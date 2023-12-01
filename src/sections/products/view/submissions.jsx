@@ -68,7 +68,7 @@ import Box from '@mui/material/Box';
 import { DataGrid } from '@mui/x-data-grid';
 
 
-export default function Projects() {
+export default function Submissions() {
 
   const columns = [
     { field: 'id', headerName: 'ID', width: 90 },
@@ -115,8 +115,8 @@ export default function Projects() {
   ];
 
   return (
-    <>
-      <h1> Project Details </h1>
+    <div style={{backgroundColor:"#fff",padding:"2%"}}>
+      <h1> Submissions Details </h1>
       <Box sx={{ height: 400, width: '100%' }}>
         <DataGrid
           rows={rows}
@@ -133,7 +133,7 @@ export default function Projects() {
           disableRowSelectionOnClick
         />
       </Box>
-    </>
+    </div>
   );
 
 }

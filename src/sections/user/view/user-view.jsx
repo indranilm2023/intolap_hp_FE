@@ -50,7 +50,7 @@ export default function Projects() {
   ];
 
   return (
-    <>
+    <div style={{backgroundColor:"#fff",padding:"2%"}}>
       <h1> User Details </h1>
       <Box sx={{ height: 400, width: '100%' }}>
         <DataGrid
@@ -68,7 +68,7 @@ export default function Projects() {
           disableRowSelectionOnClick
         />
       </Box>
-    </>
+    </div>
   );
 
 }

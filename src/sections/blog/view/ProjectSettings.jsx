@@ -13,6 +13,7 @@ import BlockSettings from '../Block_settings';
 
 
 
+
 export default function BlogView() {
   const scrollToBasics = () => {
     const basicsSection = document.getElementById('basics');
@@ -55,9 +56,9 @@ export default function BlogView() {
   };
 
   return (
-    <Container>
+    <Container >
 
-      <Box sx={{ flexGrow: 1, display: 'flex', flexDirection: 'row', gap: 1 }}>
+      <Box sx={{ m: 2, flexGrow: 1, display: 'flex', flexDirection: 'row', gap: 1 }}>
 
         <Button onClick={scrollToBasics} variant="outlined" color="primary" >
           Basics
@@ -94,49 +95,41 @@ export default function BlogView() {
       </Box>
 
       <Box>
-        
-        <div id="basics" style={{ border: '1px solid black', margin: '20px 0' }}>
-          <BasicSettings/>
+
+        <div id="basics">
+          <BasicSettings />
         </div>
 
-        <div id="ty" style={{ border: '1px solid black', margin: '20px 0' }}>
-          <TYSettings/>
+        <div id="ty">
+          <TYSettings />
         </div>
 
-        <div id="submissions" style={{ height: '500px', border: '1px solid black', margin: '20px 0' }}>
-          <h2>Submissions Section</h2>
-          <p>This is the Submissions section.</p>
-          <SubmissionSettings/>
+        <div id="submissions">
+          <SubmissionSettings />
         </div>
 
-        <div id="email" style={{ height: '500px', border: '1px solid black', margin: '20px 0' }}>
-          <h2>Email Section</h2>
-          <p>This is the Email section.</p>
-          <EmailSettings/>
+        <div id="email">
+          <EmailSettings />
         </div>
 
-        <div id="notifications" style={{ height: '500px', border: '1px solid black', margin: '20px 0' }}>
-          <h2>Notifications Section</h2>
-          <p>This is the Notifications section.</p>
-          <NotificationSettings/>
+        <div id="notifications">
+          <NotificationSettings />
         </div>
 
-        <div id="translations" style={{ height: '500px', border: '1px solid black', margin: '20px 0' }}>
-          <h2>Translations Section</h2>
-          <p>This is the Translations section.</p>
-          <TranslationSettings/>
+        <div id="translations">
+          <TranslationSettings />
         </div>
 
-        <div id="team" style={{ height: '500px', border: '1px solid black', margin: '20px 0' }}>
-          <h2>Team Section</h2>
-          <p>This is the Team section.</p>
-          <TeamSettings/>
+        <div id="team">
+          <TeamSettings />
         </div>
 
-        <div id="block" style={{ height: '500px', border: '1px solid black', margin: '20px 0' }}>
-          <h2>Block Section</h2>
-          <p>This is the Block section.</p>
-          <BlockSettings/>
+        <div id="block">
+          <BlockSettings />
+        </div>
+
+        <div>
+          <Button >Delete Project</Button>
         </div>
 
       </Box>

@@ -1,17 +1,17 @@
 import { Helmet } from 'react-helmet-async';
 
-import { ProjectView } from 'src/sections/products/view';
+import { Submissions } from 'src/sections/products/view';
 
 // ----------------------------------------------------------------------
 
-export default function projectPage() {
+export default function SubmissionsPage() {
   return (
     <>
       <Helmet>
         <title> Products | Minimal UI </title>
       </Helmet>
 
-      <ProjectView />
+      <Submissions />
     </>
   );
 }

@@ -26,7 +26,7 @@ export default function BasicSettings() {
   
 
     return (
-        <Container sx={{m:2}}>
+        <Container sx={{ m: 2 ,borderRadius:2, p:2 ,backgroundColor:"#fff"}}>
             <Grid container spacing={2}>
                 <Grid item xs={4}>
                     <h3>Basics</h3>
@@ -53,7 +53,7 @@ export default function BasicSettings() {
                             margin="normal"
                         />
 
-                        <Button type="submit" variant="contained" color="primary">
+                        <Button type="submit" variant="contained" color="primary" sx={{mt:4}}>
                             Save Basic Settings
                         </Button>
                     </form>
